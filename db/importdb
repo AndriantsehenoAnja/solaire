@@ -1,0 +1,10 @@
+#import the database 
+cat 21avril2026.sql | sudo docker exec -i sqlserver /opt/mssql-tools18/bin/sqlcmd \
+  -S localhost \
+  -U SA \
+  -P "Sqlserver?123" \
+  -d master \
+  -C
+
+plack 20
+plack 30
